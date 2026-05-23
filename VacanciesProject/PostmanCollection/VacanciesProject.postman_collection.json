@@ -1,0 +1,468 @@
+{
+  "info": {
+    "_postman_id": "7d2bf1be-da7e-4b18-b13f-373dec65f857",
+    "name": "VacanciesProject",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38657590"
+  },
+  "item": [
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "CreateProject",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Booking System\",\r\n  \"description\": \"Booking management backend project\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Projects",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Projects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateProject",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Invyy Project\",\r\n  \"description\": \"Invyy Description\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Projects",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Projects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteProject",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:7293/api/Projects/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Projects",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAllProjects",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7293/api/Projects?pageIndex=1&pageSize=10",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Projects"
+              ],
+              "query": [
+                {
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetProjectByID",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7293/api/Projects/2",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Projects",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "CreateTask",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"optimize database views\",\r\n  \"description\": \"Complete Task Module\",\r\n  \"dueDate\": \"2026-05-30\",\r\n  \"priority\": 3,\r\n  \"projectId\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Tasks",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteTask",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Tasks/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Tasks",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateTaskStatus",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI1OTQ0MzJjYi04NTg3LTRhMjUtYTM1OS1lNTJkOTBmMTA2NzAiLCJleHAiOjE3Nzk1NDM0NTMsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.U1NF8hqrCexenh9xWQPkdKh1_FHybZ-uEjEYjWdlPz8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"taskId\": 2,\r\n  \"status\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Tasks/status",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Tasks",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetTaskByProject",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhYmlyQHRlc3QuY29tIiwiVXNlclR5cGUiOiJMZWFkZXIiLCJqdGkiOiI2NTg0NzhjYy0zMjRkLTQyNmQtYTgwNi1mN2E5NzcxMGRjMTAiLCJleHAiOjE3Nzk1NDc5MTIsImlzcyI6IlZhY2FuY2llc1Byb2plY3QuQVBJIiwiYXVkIjoiVmFjYW5jaWVzUHJvamVjdC5DbGllbnQifQ.LEDKLRNoaYtuxCkF2jgiq5-4zUPMSjQ9NdDafJxG_8k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7293/api/Tasks/project/2?pageNumber=1&pageSize=10",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Tasks",
+                "project",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "pageNumber",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Abir\",\r\n  \"lastName\": \"Amer\",\r\n  \"email\": \"abir@test.com\",\r\n  \"password\": \"Abir@123\",\r\n  \"userType\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Auth/register",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"abir@test.com\",\r\n  \"password\": \"Abir@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7293/api/Auth/login",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7293",
+              "path": [
+                "api",
+                "Auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
