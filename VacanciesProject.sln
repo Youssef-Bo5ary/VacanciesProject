@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacanciesProject", "VacanciesProject\VacanciesProject.csproj", "{933E25FC-E371-4CB8-979F-D761CFA8465A}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacanciesProject.Domain", "VacanciesProject.Domain\VacanciesProject.Domain.csproj", "{59A1F922-09B3-4AA1-92A6-DC4A22D8D436}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacanciesProject.Infrastructure", "VacanciesProject.Infrastructure\VacanciesProject.Infrastructure.csproj", "{DF45717E-3565-4AA5-B739-9BC0665C30D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{455314AF-7C0B-4B2B-B1BA-F28B445684B2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
